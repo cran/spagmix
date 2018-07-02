@@ -1,0 +1,14 @@
+import(spatstat)
+importFrom("mvtnorm","dmvnorm")
+importFrom("sparr","rimpoly")
+importFrom("MCMCpack","riwish")
+importFrom("abind","abind")
+importFrom("stats","approx","runif")
+importFrom("grDevices","dev.flush","dev.hold")
+importFrom("graphics","axis","box","par","plot")
+
+exportPattern("^[[:alpha:]]+")
+
+export(sgmix,rrmix,rgmix,stgmix,unify.owin,stkey,rstpoint,rrstmix,rrpoint,rrstpoint,stintegral)
+
+S3method(plot,stim)
