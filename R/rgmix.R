@@ -21,7 +21,7 @@ rgmix <- function(N,window,v=4,S=NULL,extras=FALSE,...){
   pts <- runifpoint(N,window)
   mn <- rbind(pts$x,pts$y)
   vcvarray <- array(0,dim=c(2,2,N))
-  for(i in 1:N) vcvarray[,,i] <- riwish(v,S)
+  for(i in 1:N) vcvarray[,,i] <- riw(v,S)
 
   result <- sgmix(mn,vcvarray,window,...)
   if(extras) result <- list(f=result,mn=mn,vcv=vcvarray)

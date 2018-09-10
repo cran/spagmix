@@ -12,8 +12,8 @@ Provides functions to design synthetic spatial and spatiotemporal densities and 
 \details{
 \tabular{ll}{
 Package: \tab spagmix\cr
-Version: \tab 0.3-0\cr
-Date: \tab 2018-07-21\cr
+Version: \tab 0.3-1\cr
+Date: \tab 2018-09-08\cr
 License: \tab GPL (>= 2) \cr
 }
 Appraisal of existing, refined, and new statistical methods for the analysis of spatial and spatiotemporal point pattern data usually involves numeric experimentation. Motivated by relevant problems in nonparametric density estimation (see e.g. Wand & Jones, 1995), \code{spagmix} (``spatial Gaussian mixtures'') provides some simple utilities for designing heterogeneous density and density-ratio or \emph{relative risk} (Bithell 1990, 1991; Kelsall & Diggle, 1995) functions in space and space-time (see Fernando & Hazelton, 2014 for the latter). The package is also capable of producing realisations of (possibly inhomogeneous) spatial log-Gaussian Cox process intensities (\enc{Møller}{Moller} et al., 1998; see also Davies & Hazelton, 2013).
