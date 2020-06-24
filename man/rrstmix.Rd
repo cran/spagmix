@@ -13,7 +13,7 @@ rrstmix(g, rhotspots, rsds, rweights, rbase = 1, log = TRUE,
 }
 \arguments{
   \item{g}{
-The control density as a \code{\link{stim}}, \code{\link[sparr]{stden}}, or \code{\link[spatstat]{im}} object; this will be internally rescaled to integrate to 1 if it does not already do so. When a \code{\link{stim}} or \code{\link[sparr]{stden}} object, the resolution and domain of the final result will be the same as this. When this argument is passed an object of class \code{\link[spatstat]{im}}, the function assumes a static (unchanging) control density over time (see Fernando and Hazelton, 2014), and the user must additionally specify \code{tlim} and \code{tres}.
+The control density as a \code{\link{stim}}, \code{\link[sparr:spattemp.density]{stden}}, or \code{\link[spatstat]{im}} object; this will be internally rescaled to integrate to 1 if it does not already do so. When a \code{\link{stim}} or \code{\link[sparr:spattemp.density]{stden}} object, the resolution and domain of the final result will be the same as this. When this argument is passed an object of class \code{\link[spatstat]{im}}, the function assumes a static (unchanging) control density over time (see Fernando and Hazelton, 2014), and the user must additionally specify \code{tlim} and \code{tres}.
 }
   \item{rhotspots}{
 A \eqn{3 \times N} matrix specifying the spatiotemporal coordinates of the \eqn{N} peaks and troughs in the relative risk density. The three entries down each column will be respectively interpreted as \eqn{x}-coord., \eqn{y}-coord., and time-coordinate of each Gaussian bump.

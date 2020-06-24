@@ -5,7 +5,7 @@
 Evaluate integral of a spatiotemporal object
 }
 \description{
-Integrates an object of class \code{\link{stim}} or \code{\link[sparr]{stden}}.
+Integrates an object of class \code{\link{stim}} or \code{\link[sparr:spattemp.density]{stden}}.
 }
 \usage{
 stintegral(x)
@@ -13,7 +13,7 @@ stintegral(x)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-The object of class \code{\link{stim}} or \code{\link[sparr]{stden}} to be integrated.
+The object of class \code{\link{stim}} or \code{\link[sparr:spattemp.density]{stden}} to be integrated.
 }
 }
 \details{

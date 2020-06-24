@@ -14,7 +14,7 @@ rstpoint(n, f, W = NULL, correction = 1.5, maxpass = 50)
 The number of points to be generated.
 }
   \item{f}{
-The probability density of the points, an object of class \code{\link{stim}} or \code{\link[sparr]{stden}}.
+The probability density of the points, an object of class \code{\link{stim}} or \code{\link[sparr:spattemp.density]{stden}}.
 }
   \item{W}{
 The polygonal \code{\link[spatstat]{owin}} defining the spatial window on which the density is defined. If \code{NULL}, this will be set to the \code{\link[spatstat]{as.polygonal}} version of the pixel images stored in \code{f}. See `Details'.

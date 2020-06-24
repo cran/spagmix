@@ -15,12 +15,12 @@ lgcpmix <- function(lambda,covmodel="exp",covpars=NULL){
   if(is.null(covpars$var)) covpars$var <- 1
 
   modgen <- spatstat::getRandomFieldsModelGen(covmodel)
-  rfmodel <- do.call(modgen,covpars)
+  rfmodel <- do.call(modgen,covpars) + RandomFields::RMtrend(mean=-covpars$var/2)
   if(!inherits(rfmodel,"RMmodel")) stop("Problem generating RandomFields covariance model object",call.=FALSE)
 
-  offset <- 0.5*covpars$var
+  # offset <- 0.5*covpars$var
   lamvec <- log(as.vector(t(as.matrix(lambda))))
-  lamvec <- lamvec - offset
+  # lamvec <- lamvec - offset
   lamvec[is.na(lamvec)] <- -Inf
 
   spc <- RandomFields::RFoptions()$general$spConform

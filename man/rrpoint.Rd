@@ -16,7 +16,7 @@ rrstpoint(n, r, W = NULL, correction = 1.5, maxpass = 50)
 The number of points to be generated. This must be a numeric vector of length 2 giving the number of points to generate for the case and control densities respectively. Alternatively a single number can be supplied; then the same number of points is generated for both densities.
 }
   \item{r}{
-The relative risk surface object containing the definitions of the case and control probability densities: an object of class \code{\link{rrim}} or \code{\link[sparr]{rrs}} for \code{rrpoint}, or an object of class \code{\link{rrstim}} or \code{\link[sparr]{rrst}} for \code{rrstpoint}.
+The relative risk surface object containing the definitions of the case and control probability densities: an object of class \code{\link{rrim}} or \code{\link[sparr:risk]{rrs}} for \code{rrpoint}, or an object of class \code{\link{rrstim}} or \code{\link[sparr:spattemp.risk]{rrst}} for \code{rrstpoint}.
 }
   \item{W}{
 The polygonal \code{\link[spatstat]{owin}} defining the spatial window on which the density is defined. If \code{NULL}, this will be set to the \code{\link[spatstat]{as.polygonal}} version of the pixel images stored in \code{r}. See `Details'.
