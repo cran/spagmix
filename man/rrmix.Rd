@@ -34,10 +34,10 @@ rrmix(g, rhotspots, rsds, rweights, rbase = 1, log = TRUE)
   }
 }
 \details{
-A useful tool for the comparison of two estimated density functions on the same spatial region \eqn{W \subset R^2} is the \emph{relative risk function}, \eqn{r}, (Bithell, 1990; 1991; Kelsall and Diggle, 1995), defined simply as a density-ratio:
-\deqn{
-r(x)=f(x) / g(x);   x \in W.
-}
+A useful tool for the comparison of two estimated density functions on the same spatial region \eqn{W \subset R^2} is the \emph{relative risk function}, \eqn{r}, (Bithell, 1990; 1991; Kelsall and Diggle, 1995), defined simply as a density-ratio: 
+
+\eqn{r(x) = f(x) / g(x); x \in W.}
+
 Various methods have been developed to improve estimation of \eqn{r}, most commonly with a motivation in geographical epidemiology, where the `numerator' density \eqn{f} pertains to the observed disease cases and the `denominator' density \eqn{g} reflects the distribution of the at-risk controls (Kelsall and Diggle, 1995; Hazelton and Davies, 2009; Davies and Hazelton, 2010). To test newly developed methodology, simulations based on known relative risk scenarios are usually necessary. This function allows the user to design such scenarios, as used in Hazelton and Davies (2009), Davies and Hazelton (2010), and Davies (2013) for example.
 
 This function calculates a relative risk surface based on \eqn{N} Gaussian-style `bumps' added and subtracted from a base level of \code{rbase}, with the peaks and troughs centered at the coordinates given by \code{rhotspots} with relative weights of \code{rweights} and isotropic standard deviations of \code{rsds}. The risk surface \eqn{r} is computed as
@@ -45,9 +45,9 @@ This function calculates a relative risk surface based on \eqn{N} Gaussian-style
 \eqn{r(x) \propto } \code{rbase} \eqn{+ \sum_{i=1}^{N}} \code{rweights[}\eqn{i}\code{]}\eqn{*exp(-0.5*}\code{rsds[}\eqn{i}\code{]}\eqn{^(-2)*}||\eqn{x-}\code{rhotspots[,}\eqn{i}\code{]}||\eqn{^2)}
 
 where || . || denotes Euclidean norm. Because \eqn{f} and \eqn{g} are both densities, the risk surface as defined above must then be rescaled with respect to the supplied control density \eqn{g} (argument \code{g}) to ensure that
-\deqn{
-\int_W r(x)g(x) dx = 1
-}
+
+\eqn{\int_W r(x)g(x) dx = 1}
+
 This is automatically performed inside the function. The case density that gives rise to the designed \eqn{r} is then easily recovered because \eqn{f = r * g}. By default, the function returns the log-relative risk surface \eqn{\log r = \log f - \log g} alongside the case and control densities.
 }
 

@@ -4,16 +4,16 @@
 \alias{spagmix}
 \docType{package}
 \title{
-The spagmix Package: Artificial Spatial and Spatiotemporal Densities on Bounded Windows
+The spagmix Package: Artificial Spatial and Spatio-Temporal Densities on Bounded Windows
 }
 \description{
-Provides functions to design synthetic spatial and spatiotemporal densities and relative risk functions based mainly on Gaussian mixture distributions, and simulate iid data therefrom.
+Provides functions to design synthetic spatial and spatiotemporal densities and relative risk functions based mainly on Gaussian mixture distributions, and simulate independent and identically distributed data therefrom.
 }
 \details{
 \tabular{ll}{
 Package: \tab spagmix\cr
-Version: \tab 0.3-2\cr
-Date: \tab 2020-06-24\cr
+Version: \tab 0.3-5\cr
+Date: \tab 2022-03-28\cr
 License: \tab GPL (>= 2) \cr
 }
 Appraisal of existing, refined, and new statistical methods for the analysis of spatial and spatiotemporal point pattern data usually involves numeric experimentation. Motivated by relevant problems in nonparametric density estimation (see e.g. Wand & Jones, 1995), \code{spagmix} (``spatial Gaussian mixtures'') provides some simple utilities for designing heterogeneous density and density-ratio or \emph{relative risk} (Bithell 1990, 1991; Kelsall & Diggle, 1995) functions in space and space-time (see Fernando & Hazelton, 2014 for the latter). The package is also capable of producing realisations of (possibly inhomogeneous) spatial log-Gaussian Cox process intensities (\enc{Møller}{Moller} et al., 1998; see also Davies & Hazelton, 2013).
@@ -40,7 +40,7 @@ Some pre-made synthetic spatial windows; these are all single closed polygons as
 
 
 \emph{Data generation}\cr
-To generate purely spatial data for a single spatial density, the user is directed to \code{\link[spatstat.core]{rpoint}} of the \code{\link[spatstat:spatstat-package]{spatstat}} package or \code{\link[sparr]{rimpoly}} of the \code{\link[sparr:sparr-package]{sparr}} package.\cr
+To generate purely spatial data for a single spatial density, the user is directed to \code{\link[spatstat.random]{rpoint}} of the \code{\link[spatstat:spatstat-package]{spatstat}} package or \code{\link[sparr]{rimpoly}} of the \code{\link[sparr:sparr-package]{sparr}} package.\cr
 \code{\link{rpoispoly}} is a wrapper of \code{\link[sparr]{rimpoly}}, and is used to generate realisations of Poisson point processes in space, given an intensity function.
 \code{\link{rrpoint}} is a wrapper of \code{\link[sparr]{rimpoly}}, and is used to generate iid datasets based on a synthetic spatial relative risk surface object.\cr
 \code{\link{rstpoint}} is a 3D rejection algorithm for sampling iid data from a supplied spatiotemporal density.\cr
@@ -60,7 +60,7 @@ The \code{spagmix} package depends upon \code{\link[spatstat:spatstat-package]{s
 A.K. Redmond and T.M. Davies\cr
 \emph{Dept. of Mathematics & Statistics, University of Otago, Dunedin, New Zealand}\cr
 
-Maintainer: T.M.D. \email{tdavies@maths.otago.ac.nz}\cr
+Maintainer: T.M.D. \email{tilman.davies@otago.ac.nz}\cr
 }
 
 

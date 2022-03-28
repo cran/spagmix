@@ -20,11 +20,11 @@ rpoispoly(z, w = NULL, correction = 1.1, maxpass = 50)
 \item{maxpass}{The maximum number of passes allowed before the function exits. If this is reached before \eqn{n} points are found that fall within \code{w}, a warning is issued.}
 }
 \details{
-This is a wrapper function for \code{\link[sparr]{rimpoly}} that operates much like \code{\link[spatstat.core]{rpoispp}}, but with artificial corrections at the edges of boundary pixels. This allows the user to generate a realisation of a 2D Poisson point process using a supplied pixel \code{\link[spatstat.geom]{im}}age as the spatial intensity function, but return the result with a polygonal \code{\link[spatstat.geom]{owin}} instead of a binary image mask.
+This is a wrapper function for \code{\link[sparr]{rimpoly}} that operates much like \code{\link[spatstat.random]{rpoispp}}, but with artificial corrections at the edges of boundary pixels. This allows the user to generate a realisation of a 2D Poisson point process using a supplied pixel \code{\link[spatstat.geom]{im}}age as the spatial intensity function, but return the result with a polygonal \code{\link[spatstat.geom]{owin}} instead of a binary image mask.
 
 Let \eqn{n} be a randomly generated integer from a Poisson distribution with mean given by the integral of the intensity function \code{z}. When the user specifies their own polygonal window in \code{w}, a \code{while} loop is called and repeated as many
 times as necessary (up to \code{maxpass} times) to find \eqn{n} points inside \code{w} (when \code{w = NULL}, then the union of the pixels of \code{z}
-is used, obtained via \code{as.polygonal(Window(z))}). The loop is necessary because the standard behaviour of \code{\link[spatstat.core]{rpoispp}} can (and often does)
+is used, obtained via \code{as.polygonal(Window(z))}). The loop is necessary because the standard behaviour of \code{\link[spatstat.random]{rpoispp}} can (and often does)
 yield points that sit in corners of pixels which lie outside a corresponding irregular polygon \code{w}.
 
 The \code{correction} argument is used to determine how many points are generated initially,
@@ -51,7 +51,7 @@ Note that this is an artificial correction that forces the Poisson-generated num
 }
 
 \seealso{
-\code{\link[spatstat.core]{rpoint}}, \code{\link[sparr]{rimpoly}}, \code{\link[spatstat.core]{rpoispp}}
+\code{\link[spatstat.random]{rpoint}}, \code{\link[sparr]{rimpoly}}, \code{\link[spatstat.random]{rpoispp}}
 }
 
 \examples{
