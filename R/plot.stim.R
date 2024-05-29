@@ -6,7 +6,11 @@ plot.stim <- function(x, fix.range = FALSE, sleep = 0.2, override.par = TRUE, ..
   if(is.null(ellip$log)) ellip$log <- FALSE
   mn <- is.null(ellip$main)
 
-  if(override.par) par(mfrow=c(1,1),mar=rep(2,4))
+  if(override.par){
+    oldpar <- par(no.readonly=TRUE)
+    on.exit(par(oldpar))
+    par(mfrow=c(1,1),mar=rep(2,4))
+  }
 
   lst <- x$v
   zlimeq <- c(0,min(sapply(lst,max)[sapply(lst,max)>0]))

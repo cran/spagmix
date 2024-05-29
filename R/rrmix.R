@@ -1,6 +1,6 @@
 rrmix <- function(g, rhotspots, rsds, rweights, rbase = 1, log = TRUE) {
   if(!is.im(g)) stop("'g' must be of spatstat class 'im'")
-  g <- g/integral(g)
+  g <- g/spatstat.geom::integral.im(g)
 
   # w <- window
   # wg <- Window(g)

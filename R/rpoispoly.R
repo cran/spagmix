@@ -4,5 +4,5 @@ rpoispoly <- function(z,w=NULL,correction=1.1,maxpass=50){
   } else {
     stop("'z' must be an object of class 'im' (spatstat)")
   }
-  return(rimpoly(rpois(1,integral(z)),z=z,w=w,correction=correction,maxpass=maxpass))
+  return(rimpoly(rpois(1,spatstat.geom::integral.im(z)),z=z,w=w,correction=correction,maxpass=maxpass))
 }

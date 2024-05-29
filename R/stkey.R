@@ -8,8 +8,8 @@ stkey <- function(start, stop, tlim, kf = NULL, tres = 64,
   if(is.null(window)) window <- as.polygonal(Window(start))
   if(is.null(intersect.owin(Window(start),window,fatal=FALSE))) stop("'window' must overlap domain of supplied pixel images")
 
-  start <- start / integral(start)
-  stop <- stop / integral(stop)
+  start <- start / spatstat.geom::integral.im(start)
+  stop <- stop / spatstat.geom::integral.im(stop)
 
   if(!is.numeric(tlim)||length(tlim)!=2) stop("'tlim' must be a numeric vector of length 2")
 
@@ -26,7 +26,7 @@ stkey <- function(start, stop, tlim, kf = NULL, tres = 64,
     comp <- sapply(kf,compatible.im,B=start)
     if(sum(comp)!=nkey) stop("pixel images in 'kf' must be compatible with 'start' and 'stop'")
   }
-  kf <- lapply(kf,function(x) x/integral(x))
+  kf <- lapply(kf,function(x) x/spatstat.geom::integral.im(x))
 
   ntot <- nkey+2
   if(nkey>0){

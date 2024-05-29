@@ -1,3 +1,17 @@
+        CHANGES IN spagmix VERSION 0.4-0
+
+OVERVIEW
+
+    o Further simplification of import designations
+    
+
+CHANGES IN spagmix VERSION 0.4-0
+
+OVERVIEW
+
+    o Revised internal changes to spatstat dependencies, removed 'lgcpmix()'
+
+
         CHANGES IN spagmix VERSION 0.3-4
 
 OVERVIEW

@@ -39,11 +39,12 @@ Davies, T.M. and Lawson, A.B. (2019), An evaluation of likelihood-based bandwidt
 }
 \author{A.K. Redmond and T.M. Davies}
 \examples{
-par(mfrow=c(2,3))
+oldpar <- par(mfrow=c(2,3))
 plot(bx);axis(1);axis(2)
 plot(heart);axis(1);axis(2)
 plot(shp1);axis(1);axis(2)
 plot(shp2);axis(1);axis(2)
 plot(star);axis(1);axis(2)
 plot(toywin);axis(1);axis(2)
+par(oldpar)
 }

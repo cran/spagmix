@@ -60,7 +60,6 @@ dens1.detailed$vcv
 # Set underlying uniform proportion and compare with dens2 from above
 set.seed(456)
 dens2.wunif <- rgmix(7,window=toywin,p0=0.3)
-par(mfrow=c(1,2))
 plot(rpoint(500,dens2))
 plot(rpoint(500,dens2.wunif))
 

@@ -23,7 +23,8 @@ The rescaled \code{\link[spatstat.geom]{owin}}.
 W <- Window(chorley)
 U <- unify.owin(W)
 
-par(mfrow=c(1,2))
+oldpar <- par(mfrow=c(1,2))
 plot(W,axes=TRUE)
 plot(U,axes=TRUE)
+par(oldpar)
 }

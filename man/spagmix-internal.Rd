@@ -15,4 +15,8 @@ Internal \code{\link{spagmix}} functions, only meant to be accessed by the user 
 }
 \keyword{internal}
 
+\value{
+A numeric matrix for internal calculations in \code{\link{rgmix}}.
+}
+
 \author{T.M. Davies}

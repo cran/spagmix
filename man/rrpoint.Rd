@@ -50,14 +50,14 @@ rho <- rrmix(g=gg,
 
 rho.sample <- rrpoint(n=c(400,800),r=rho,W=toywin)
 
-par(mfrow=c(2,2))
+oldpar <- par(mfrow=c(2,2))
 plot(rho$g,main="control density")
 plot(rho$f,main="case density")
 plot(rho$r,main="log relative risk surface")
 plot(rho.sample$controls,main="sample data")
 points(rho.sample$cases,col=2)
 legend("topright",col=2:1,legend=c("cases","controls"),pch=1)
-
+par(oldpar)
 
 \donttest{
 # Using 'rrs' object:

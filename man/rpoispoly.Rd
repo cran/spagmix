@@ -69,7 +69,6 @@ aa <- rpoispp(intens) # Default spatstat function
 bb <- rpoispoly(intens) # No polygon supplied; just uses pixel union
 cc <- rpoispoly(intens,w=toywin) # Original irregular polygon
 
-par(mfrow=c(2,2))
 plot(intens,log=TRUE)
 plot(aa,main=paste("aa\nn =",npoints(aa)))
 plot(bb,main=paste("bb\nn =",npoints(bb)))

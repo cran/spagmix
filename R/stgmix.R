@@ -16,9 +16,9 @@ stgmix <- function(mean, vcv, window, tlim, p0=0, p=NULL, sres=128, tres=sres, i
 
   if(is.null(p)) p <- rep((1-p0)/n,n)
   if(!is.numeric(p)) stop("'p' must be numeric")
-  if(length(p)!=n)
+  if(length(p)!=n) stop("inconsistent number of components specified in 'p'")
   if(any(p<0)||any(p>1)) stop("all elements of 'p' must be in [0,1]")
-  if(sum(c(p,p0))!=1) stop("'p0' and 'p' must sum to 1")
+  if(isFALSE(all.equal(sum(c(p,p0)),1))) stop("'p0' and 'p' must sum to 1")
 
   if(!is.numeric(vcv)) stop("'vcv' must be numeric")
   if(is.array(vcv)){
