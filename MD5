@@ -1,6 +1,7 @@
-a53d59c6572d2e83faef4e1acdc88781 *DESCRIPTION
-bfa16066c664b9231cd19f61d9c43dd2 *NAMESPACE
-412f760277f3bece92ecb55ba58d2a9a *NEWS
+d9723f1a23dbe19ffa4ad02fbe5626e6 *DESCRIPTION
+f812157c29fd2a84893ac7e507795298 *NAMESPACE
+eadbc387e2de704af61f3522dafb38b0 *NEWS
+7cd27c7b56a0f1989e0d1c884d338e9f *R/lgcpmix.R
 59a698bb74285d044072b2e3c5716f6b *R/plot.stim.R
 9036d48a599c38236692ca8d0dd6acd7 *R/rgmix.R
 6597e1a43e71b4a204d44982aa3db374 *R/riw.R
@@ -21,6 +22,7 @@ d9fd21344702d6f40553830fa4c0d550 *data/shp1.rda
 dc567c731895fc6ef63180667445614c *data/shp2.rda
 62c5b51395386deeca8797da0b3a2068 *data/star.rda
 ec10d26a9e9ef7b84ee3268e847f85aa *data/toywin.rda
+14467bac92f1918c15e75dcf68ad3ba0 *man/lgcpmix.Rd
 821b47681736b1e97a3b11512b4fd758 *man/plot.stim.Rd
 97b475fed1e03a9020c14f3e62fb8089 *man/rgmix.Rd
 230993a2ed19cb6c6021ff2a7d19741a *man/rpoispoly.Rd
@@ -30,7 +32,7 @@ d3d1783c696be8b3abe2628c1a36995c *man/rrmix.Rd
 283929de2de91b73ea33cbb02fbb32d7 *man/rstpoint.Rd
 e42a80b86a80f1ba2b6140705de3c79f *man/sgmix.Rd
 6e3501444acc29eb9e97515ee832ea87 *man/spagmix-internal.Rd
-fe345d02c45e7f702aa677ec2a36e6fd *man/spagmix-package.Rd
+eb60281542496f74f2b86f1660fa73cb *man/spagmix-package.Rd
 e9999c053f25dfce8d462baa1a2f82f0 *man/stgmix.Rd
 459aa6f20a092cb85143af9f68237227 *man/stintegral.Rd
 100a6d0f189a9d8a2180f4a22218ab40 *man/stkey.Rd

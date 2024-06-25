@@ -1,5 +1,5 @@
 import(spatstat)
-importFrom(spatstat.random, runifpoint)
+importFrom(spatstat.random, runifpoint, rLGCP)
 importFrom(spatstat.geom, affine,area.owin,as.mask,as.polygonal,compatible.im,im,inside.owin,integral.im,intersect.owin,is.im,is.owin,is.solist,ppp,safelookup,solist,Window)
 importFrom("mvtnorm","dmvnorm")
 importFrom("sparr","rimpoly")
@@ -10,6 +10,6 @@ importFrom("graphics","axis","box","par","plot")
 
 exportPattern("^[[:alpha:]]+")
 
-export(sgmix,rrmix,rgmix,stgmix,unify.owin,stkey,rstpoint,rrstmix,rrpoint,rrstpoint,stintegral,rpoispoly)
+export(sgmix,rrmix,rgmix,stgmix,unify.owin,stkey,rstpoint,rrstmix,rrpoint,rrstpoint,stintegral,rpoispoly,lgcpmix)
 
 S3method(plot,stim)

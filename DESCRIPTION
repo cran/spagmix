@@ -2,8 +2,8 @@ Package: spagmix
 Type: Package
 Title: Artificial Spatial and Spatio-Temporal Densities on Bounded
         Windows
-Version: 0.4-1
-Date: 2024-05-29
+Version: 0.4-2
+Date: 2024-06-25
 Authors@R: c(
   person(c("Anna", "K."), "Redmond", role = c("aut"), email = "anna.redmond@otago.ac.nz"),
   person(c("Tilman", "M."), "Davies", role = c("aut", "cre"), email = "tilman.davies@otago.ac.nz"))
@@ -16,8 +16,8 @@ License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 NeedsCompilation: no
-Packaged: 2024-05-28 22:47:54 UTC; davti75p
+Packaged: 2024-06-25 02:02:02 UTC; davti75p
 Author: Anna K. Redmond [aut],
   Tilman M. Davies [aut, cre]
 Repository: CRAN
-Date/Publication: 2024-05-29 10:40:02 UTC
+Date/Publication: 2024-06-25 02:50:02 UTC

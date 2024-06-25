@@ -1,8 +1,20 @@
-        CHANGES IN spagmix VERSION 0.4-0
+        CHANGES IN spagmix VERSION 0.4-2
 
 OVERVIEW
 
-    o Further simplification of import designations
+    o Revised and re-introduced 'lgcpmix' function, sans 'randomFields' dependency
+    
+NEW FUNCTIONS
+
+    o lgcpmix
+    Inhomogeneous log-Gaussian Cox process intensity generator (spatial only)
+
+
+        CHANGES IN spagmix VERSION 0.4-1
+
+OVERVIEW
+
+    o Internal changes
     
 
 CHANGES IN spagmix VERSION 0.4-0
